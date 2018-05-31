@@ -1,6 +1,6 @@
 //go:generate goagen bootstrap -d github.com/akm/goa_gae_datastore_example/design
 
-package main
+package server
 
 import (
 	"github.com/akm/goa_gae_datastore_example/app"
