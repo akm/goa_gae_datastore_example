@@ -1,4 +1,4 @@
-package main
+package controller
 
 import (
 	"github.com/akm/goa_gae_datastore_example/app"

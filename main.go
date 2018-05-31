@@ -6,6 +6,7 @@ import (
 	"github.com/akm/goa_gae_datastore_example/app"
 	"github.com/goadesign/goa"
 	"github.com/goadesign/goa/middleware"
+	"github.com/akm/goa_gae_datastore_example/controller"
 )
 
 func main() {
@@ -19,7 +20,7 @@ func main() {
 	service.Use(middleware.Recover())
 
 	// Mount "User" controller
-	c := NewUserController(service)
+	c := controller.NewUserController(service)
 	app.MountUserController(service, c)
 
 	// Start service
