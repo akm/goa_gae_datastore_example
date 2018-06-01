@@ -1,4 +1,5 @@
 //go:generate goagen bootstrap -d github.com/akm/goa_gae_datastore_example/design
+
 // +build appengine
 
 package server
@@ -12,7 +13,7 @@ import (
 	"github.com/akm/goa_gae_datastore_example/controller"
 )
 
-func main() {
+func init() {
 	// Create service
 	service := goa.New("appengine")
 
